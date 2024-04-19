@@ -19,8 +19,14 @@ Directory structure:
 ```
 | -- data
     | -- csv files
+    | -- json files
 | -- src
-    | -- [raw]exp : temp experimental folder
+    | -- exp : temp experimental folder
     | -- data_handling : folder to hold code related to data processing/handling
-    | -- metrics : folder to hold similarity computation metrics
+    | -- metrics : folder to hold metrics computation
+    | -- evaluations
 ```
+
+
+Scoring Flow:
+![Scoring](/data/scoring.png)

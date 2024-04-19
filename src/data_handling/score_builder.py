@@ -14,7 +14,7 @@ sys.path.append(os.path.abspath('../../'))
 from src.metrics.compute_cosine import compute_similarity
 from src.metrics.compute_empathy import measure_empathy
 from src.metrics.compute_rouge import compute_rouge_scores
-from src.data_handling.utils import compute_eval_score_for_response
+from src.metrics.utils import compute_eval_score_for_response
 
 data_path = '../../data'
 
@@ -54,7 +54,7 @@ AI-H :
 
 
 def compute_scores_for_bulk_data(data_obj):
-    for idx in tqdm(range(len(data_obj)-30, len(data_obj))):
+    for idx in tqdm(range(len(data_obj))):
         scores = {}
         # Concatenate previous context messages into a single string
         prev = data_obj[idx]['prev_context_conversation']

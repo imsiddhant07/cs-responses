@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath('../../'))
 from src.metrics.compute_cosine import compute_similarity
 from src.metrics.compute_empathy import measure_empathy
 from src.metrics.compute_rouge import compute_rouge_scores
-from src.data_handling.utils import compute_eval_score_for_response
+from src.metrics.utils import compute_eval_score_for_response
 
 model = SentenceTransformer('BAAI/bge-base-en-v1.5')
 
