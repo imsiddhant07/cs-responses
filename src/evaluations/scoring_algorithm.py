@@ -12,7 +12,7 @@ from src.metrics.utils import compute_eval_score_for_response
 model = SentenceTransformer('BAAI/bge-base-en-v1.5')
 
 
-def score_data_point(data_point):
+def score_data_point_for_eval(data_point):
     """
     Given a data point computes all relevant scores
 
