@@ -19,8 +19,7 @@ def compute_similarity(model, source, target):
 
     Note:
     The function assumes that the `model` passed has an `encode` method which supports the `normalize_embeddings` parameter.
-    The cosine similarity is a value between -1 and 1, where 1 indicates perfect similarity, 0 indicates no similarity,
-    and -1 indicates perfect dissimilarity.
+    The cosine similarity is a value between 0 and 1, where 1 indicates perfect similarity, 0 indicates no similarity.
     """
     source_embeddings = model.encode(source, normalize_embeddings=True)
     target_embeddings = model.encode(target, normalize_embeddings=True)
